@@ -10,20 +10,29 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+	    
+	    <style>
+		img {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+	    </style>
+	    
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand" href="index.html">
+		<img alt="image" class="img-fluid rounded" src="https://raw.githubusercontent.com/Alfcastmuri/testing/master/dist/img/hc.png" width="255" height="70">
+		</a>
+		
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" />
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </form>
+		
+		
+		<img alt="image" class="img-fluid rounded" align="middle" src="https://raw.githubusercontent.com/Alfcastmuri/testing/master/dist/img/head1.png" width="485" height="150" style="vertical-align:bottom">
+		
+
             <!-- Navbar-->
             <ul class="navbar-nav ml-auto ml-md-0">
             </ul>
@@ -34,108 +43,43 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Politicas</div>
 				
+                            <div class="sb-sidenav-menu-heading">Menú</div>
+
+                            <a class="nav-link" href="index.html">Covid - 19</a>
 				
-				
-				
-                            <a class="nav-link" href="index.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Covid - 19
-                            </a>
-				
-				 <a class="nav-link" href="estados.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Análisis de estados
-                            </a>
-				
-				 <a class="nav-link" href="mexico.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                México
-                            </a>
-				
-				 <a class="nav-link" href="peru.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Perú
-                            </a>
-				
-				 <a class="nav-link" href="mxvsperu.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                México vs Perú
-                            </a>
-				
-				 <a class="nav-link" href="metodo.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Metodología
-                            </a>
-				
-				
-			 <a class="nav-link" href="equipo.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Equipo
-                            </a>
-			
-				
-				
-				
-				
-                            <div class="sb-sidenav-menu-heading">Interface</div>
+							
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Layouts
+                                Políticas
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+				
+				    <a class="nav-link" href="estados.html">Estados</a>
+                                    <a class="nav-link" href="mexico.html">México</a>
+				    <a class="nav-link" href="peru.html">Perú</a>
+                                    <a class="nav-link" href="mxvsperu.html"> Comparación de paises</a>                         
                                 </nav>
                             </div>
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                                Pages
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        Authentication
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                            <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Forgot Password</a>
-                                        </nav>
-                                    </div>
-                                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        Error
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="401.html">401 Page</a>
-                                            <a class="nav-link" href="404.html">404 Page</a>
-                                            <a class="nav-link" href="500.html">500 Page</a>
-                                        </nav>
-                                    </div>
-                                </nav>
-                            </div>
-                            <div class="sb-sidenav-menu-heading">Addons</div>
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Charts
-                            </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Tables
-                            </a>
-                        </div>
+				
+								
+			    <a class="nav-link" href="metodo.html">Metodología</a>
+			    <a class="nav-link" href="equipo.html">Equipo</a>
+				
+				
+				
+				
+				
+				
+				
+
+			    
+			    
+			 </div>   
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </div>
                 </nav>
             </div>
@@ -149,10 +93,10 @@
 				  <div class="container align-items-center justify-content-center d-flex">
 				    <div class="row justify-content-center text-center">
 				      <div class="col-12 col-md-10 col-lg-8">
-					<h1> <br> <br> <br> Políticas durante la pandemia de COVID-19</h1>
+					      <h1> <br> <br> <br> <br> <br> <br> <strong>Políticas durante la pandemia de COVID-19</strong><br></h1>
 				        <h3 class="mb-5"><em>En este trabajo analizaremos cómo los distintos estados y países han afrontado la pandemia por el COVID-19 mediante distintas políticas públicas, y evaluaremos el impacto que estas han tenido a través de una visión comparativa entre las distintas regiones estudiadas </em></h3>
 					<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">¿Te interesa conocer más? ¡Quédate con nosotros y haz click aquí!</a>
-				        <h2> <br> <br> </h2>
+				        <h2> <br> <br><br> <br> <br> </h2>
 
 					    </div>
 				    </div>
@@ -169,17 +113,49 @@
 				    <div class="container text-center">
 				      <div class="row">
 					<div class="col-lg-10 mx-auto">
-					  <h2> <br> <br>LA COVID-19</h2>
+					  <h2> <br> <br> <br> <br> <br>EL COVID-19</h2>
 					  <p class="lead mb-5" align="justify"> Dentro de un contexto de desigualdades, corrupción, precariedades en los sistemas educativos, sanitarios, entre otros; Latinoamérica se ha enfrentado, casi desarmada, a una de las mayores crisis que ha sufrido el mundo contemporáneo: La pandemia por la COVID-19. Desesperadamente, los distintos países de la región han tenido que dejar miles de proyectos planificados con anterioridad para enfocarse por completo en el desarrollo de políticas públicas que permitan la contención de la propagación del virus, el funcionamiento de los servicios básicos durante este periodo y la posterior vuelta a la “nueva normalidad”. México no ha sido la excepción. Desde la detección del primer caso el el 27 de febrero, el virus se ha propagado rápidamente por el país, convirtiéndolo en uno de los más afectados a nivel global. Los diversos estados han desarrollado diversas políticas para contener la expansión del virus y mitigar los daños en los sistemas de salud, economía, educación y, sobre todo, tratar de evitar la menor pérdida de vidas humanas. Bajo este contexto, describiremos la situación que está viviendo actualmente el país, enfocándonos en tres estados específicos: Ciudad de México, Guanajuato y Estado de México. Además, revisaremos y analizaremos los efectos que han tenido las distintas medidas aplicadas por cada uno de ellos. 
-					  <br> <br> <br> </p>
+					  <br> <br>   </p>
 					</div>    
 				      </div>
 				    </div>
-				  </section>
+					  
+					  
+			 <div class="container">
+			    <div class="row text-center">
+			      <div class="col-12 col-sm-6 col-md-3">
+				<img alt="image" class="fdb-icon" src="https://raw.githubusercontent.com/Alfcastmuri/testing/master/dist/img/Untitled-2.png" width="100" height="100">
+				<h4>Covid en la CDMX, Edomex y Guanajuato</h4>
+				<p class="mt-3"><a class="btn btn-primary" href="estados.html">Vamos</a>
+			      </div>
+
+			      <div class="col-12 col-sm-6 col-md-3 pt-5 pt-sm-0">
+				<img alt="image" class="fdb-icon" src="https://raw.githubusercontent.com/Alfcastmuri/testing/master/dist/img/mexico.png" width="100" height="100">
+				<h4>¿Como estamos en México?</h4>
+				<p class="mt-3"><a class="btn btn-primary" href="mexico.html">Vamos</a>
+			      </div>
+
+			      <div class="col-12 col-sm-6 col-md-3 pt-5 pt-md-0">
+				<img alt="image" class="fdb-icon" src="https://raw.githubusercontent.com/Alfcastmuri/testing/master/dist/img/peruico.png" width="100" height="100">
+				<h4>Perú, situación Covid de un país hermano</h4>
+				<p class="mt-3"><a class="btn btn-primary" href="peru.html">Vamos</a>
+			      </div>
+
+			      <div class="col-12 col-sm-6 col-md-3 pt-5 pt-md-0">
+				<img alt="image" class="fdb-icon" src="https://raw.githubusercontent.com/Alfcastmuri/testing/master/dist/img/laico.png" width="100" height="100">
+				<h4>Covid en latinoamérica <br> México vs Perú</h4>
+				<p class="mt-3"><a class="btn btn-primary" href="mxvsperu.html"> Vamos</a> 
+			      </div>
+			    </div>
+			  </div>
+				<br> <br> <br>  </p>
+			<br> <br> <br>  </p>
+		 </section>
 			    
 			
+
 			
-			
+
 			
 			
                     <div class="container-fluid">   
